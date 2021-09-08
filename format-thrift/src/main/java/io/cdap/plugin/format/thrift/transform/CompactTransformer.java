@@ -8,12 +8,8 @@ import io.cdap.cdap.api.data.schema.Schema;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.thrift.TBase;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CompactTransformer {
-
-  Logger LOG = LoggerFactory.getLogger(CompactTransformer.class);
 
   public StructuredRecord.Builder convertParToStructuredRecord(TBase<ParsedAnonymizedRecord, ParsedAnonymizedRecord._Fields> parsedAnonymizedRecord) {
     List<Schema.Field> fields = getParFields();

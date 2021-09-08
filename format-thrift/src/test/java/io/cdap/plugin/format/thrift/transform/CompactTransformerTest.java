@@ -105,23 +105,4 @@ public class CompactTransformerTest {
     protocol.writeMessageEnd();
     return transportBuffer;
   }
-//
-//  private StructuredRecord decode(byte[] thriftRecordBinary) throws TException {
-//    // Set up buffer for feeding into Thrift protocol
-//
-//    LOG.info("Entering Decode Method");
-//    TTransport byteBuffer = new TMemoryBuffer(thriftRecordBinary.length);
-//    TProtocol thriftProtocol = new TCompactProtocol(byteBuffer);
-//    LOG.info("TProtocol: " + thriftProtocol);
-//
-//    //This sets the record to be read
-//    LOG.info("Writing Record to Buffer");
-//    byteBuffer.write(thriftRecordBinary);
-//
-//    StructuredRecord result = readMessage(thriftProtocol);
-//
-//    LOG.info("test");
-//    return result;
-//  }
-
 }
